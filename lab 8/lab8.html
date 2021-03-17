@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href= "lab8.css">
+<title>Калькулятор</title>
+</head>
+<BODY link="#FFFFFF" TEXT="#000000" VLINK="#999999"
+      alink="#00FF00" BGCOLOR="#000000">
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1251">
+
+
+    <form>
+        <table border=5 cellspacing=2 width=350 bgcolor="#ffebcd" align="center">
+            <tr align=center><th align=right>Формула для розрахунку:</th>
+                <td>e<sup>c</sup>+4-sin(ck)/sin<sup>2</sup>k</td>
+                <td rowspan=2><input type=button value=" Обчислити "
+                                     onclick="calc1(this.form)"></td>
+            </tr>
+            <tr align=center>
+                <th align=right>Результат:</th>
+                <td><input type=text name=result size=15></td></tr>
+        </table>
+    </form>
+
+
+<form>
+    <table border=5 cellspacing=2 width=350 bgcolor="#ffebcd" align="center">
+        <tr align=center><th align=right>Формула для розрахунку:</th>
+            <td>k<sup>2</sup>/(4+k)<sup>2</sup> + c</td>
+            <td rowspan=2><input type=button value=" Обчислити "
+                                 onclick="calc2(this.form)"></td>
+        </tr>
+        <tr align=center>
+            <th align=right>Результат:</th>
+            <td><input type=text name=result size=15></td></tr>
+    </table>
+</form>
+
+<script src="lab8.js">
+
+</script>
+</body>
+</html>
