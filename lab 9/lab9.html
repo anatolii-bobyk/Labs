@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href = "lab9.css">
+    <title>Лаба 9</title>
+</head>
+<body>
+<p><button id="myBtn">Open Modal Window</button></p>
+<div id="myModal" class="modal">
+   <div class="modal-content">
+       <span class="close">&times;</span>
+       <p><font color="#f5deb3">Close Modal Window</font></p>
+       <form action="" method="get">
+           <table  border="3" cellspacing="3" cellpadding="3" width="20%" bgcolor="red" align="left">
+               <tr>
+                   <td>Прізвище студента</td>
+                   <td><font><input type="text" maxlength="15" size="20" id="surname"></font></td>
+               </tr>
+               <tr>
+                   <td>Ім`я студента</td>
+                   <td><font><input type="text" maxlength="15" size="20" id="name"></font></td>
+               </tr>
+               <tr>
+                   <td>Оцінка з математики</td>
+                   <td><input type="number" maxlength="15" size="20" id="mathMark"></td>
+               </tr>
+               <tr>
+                   <td>Оцінка з фізики</td>
+                   <td><input type="number" maxlength="15" size="20" id="physicsMark"></td>
+               </tr>
+               <tr>
+                   <td>Оцінка з інформатики</td>
+                   <td><input type="number" maxlength="15" size="20" id="informaticsMark"></td>
+               </tr>
+               <tr>
+                   <td><input type="button"  id="button" value="to hand over"></td>
+               </tr>
+           </table>
+       </form>
+   </div>
+</div>
+
+<p><span id="display"></span></p>
+
+
+<div id = "menu">
+
+    <div class="menu-item">
+        лаба №1
+        <div class="submenu">
+            <a href="https://github.com/anatolii-bobyk/Labs/tree/main/lab1" >посилання на лабу №1</a>
+        </div></div>
+    <div class="menu-item">
+        Лаба №2
+        <div class="submenu">
+            <a href="https://github.com/anatolii-bobyk/Labs/tree/main/lab2">посилання на лабу №2</a>
+        </div></div>
+    <div class="menu-item">
+        Лаба №3
+        <div class="submenu">
+            <a href="https://github.com/anatolii-bobyk/Labs/tree/main/lab3">посилання на лабу №3</a>
+        </div></div>
+
+</div>
+
+<script src="Student.js"></script>
+<script src="lab9.js"></script>
+<script src="menu.js"></script>
+<script src="modal%20window.js"></script>
+</body>
+</html>
