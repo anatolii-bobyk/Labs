@@ -1,5 +1,5 @@
 <?php
-interface SayGoodBye{
+/*interface SayGoodBye{
     public function GoodBye(): string;
-}
+}*/
 ?>

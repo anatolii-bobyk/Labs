@@ -1,5 +1,5 @@
 <?php
-abstract class Pet implements SayGoodBye {
+/*abstract class Pet implements SayGoodBye {
     abstract public function getValue();
 
     public function printValue()
@@ -11,5 +11,5 @@ abstract class Pet implements SayGoodBye {
     {
         return "Good Bye";
     }
-}
+}*/
 ?>

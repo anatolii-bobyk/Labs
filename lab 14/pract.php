@@ -62,7 +62,7 @@ $monitorDell= new Monitor(27,'548489x98458','someone',5647476);
 //echo $monitorDell->getScreenPrice(),"<br>";
 //$parameters = $monitorDell->getMonitorParameters();
 //echo $parameters;
-$monitorDell->printMonitor();*/
+$monitorDell->printMonitor();*/     //first_test
 
 
 /*class Book {
@@ -119,9 +119,9 @@ book = new Book('Kobzar',300,'Shevchenko','Ukraine',1965);
 $book2 = new Book('Garry potter',1255,'Someone','USA',1966);
 $book->printLeftPages($book->getLeftPages(150));
 echo '<br>';
-$book2->printLeftPages($book2->getLeftPages(200));*/
+$book2->printLeftPages($book2->getLeftPages(200));*/     //book_test
 
-include 'SayHelloTrait.php';
+/*include 'SayHelloTrait.php';
 include 'SayGoodByeInterface.php';
 include 'Abstract.php';
 
@@ -172,6 +172,9 @@ class Wolf2 extends Pet {
 }
 $Wolf = new Wolf2('Вовки');
 $Wolf->printValue();
-$Wolf->echoGoodBye();
+$Wolf->echoGoodBye();*/       //lab 14
+
+
+
 
 ?>
