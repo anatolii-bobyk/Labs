@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Task2</title>
+    <script
+            src="https://code.jquery.com/jquery-3.6.0.min.js"
+            integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+            crossorigin="anonymous"></script>
+</head>
+<body>
+<input type="number" name="year" class="year"><br>
+<button class="calculate">calculate</button>
+
+<script>
+    $(document).ready(function (){
+        $('button.calculate').on('click',function (){
+            var yearOfBirth = $('input.year').val();
+            //send content
+            $.ajax({
+                method: "POST",
+                url: "a2.php",
+                data: { year: yearOfBirth }
+
+            })
+                .done(function(msg) {
+                    var result = document.createElement("label");
+                    var br = document.createElement("br");
+                    result.innerHTML = msg;
+                    document.body.appendChild(result).appendChild(br);
+                });
+        })
+    });
+</script>
+
+</body>
+</html>
