@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Task4</title>
+    <script
+            src="https://code.jquery.com/jquery-3.6.0.min.js"
+            integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+            crossorigin="anonymous"></script>
+</head>
+<body>
+<input type="radio" name="sex" class = "sex" value="man">man<br>
+<input type="radio" name="sex" value="woman"  class="sex">woman<br>
+<input type="range"  class = "range" value="100" min="100" max="200" step="5"><br>
+<button class="idealWeight">ideal weight</button>
+<script>
+    $(document).ready(function (){
+        $('button.idealWeight').on('click',function (){
+            var idealWeight = $('input[type="radio"]').val();
+            var height = $('input.range').val();
+            //send content
+            $.ajax({
+                method: "POST",
+                url: "a3.php",
+                data: { sex: idealWeight, height: height }
+
+            })
+                .done(function(msg) {
+                    var result = document.createElement("label");
+                    var br = document.createElement("br");
+                    result.innerHTML = msg;
+                    document.body.appendChild(result).appendChild(br);
+                });
+        })
+    });
+</script>
+</body>
+</html>

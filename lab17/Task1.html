@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Task 1</title>
+    <script
+            src="https://code.jquery.com/jquery-3.6.0.min.js"
+            integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+            crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <input type="number" name="num1" class="num1"><br>
+    <input type="number" name="num2" class="num2"><br>
+    <button class="send">send</button>
+
+
+<script>
+    $(document).ready(function (){
+        $('button.send').on('click',function (){
+          var number1 = $('input.num1').val();
+          var number2 = $('input.num2').val();
+          //send content
+            $.ajax({
+                method: "POST",
+                url: "a1.php",
+                data: { num1: number1, num2: number2 }
+
+            })
+                .done(function(msg) {
+                     var result = document.createElement("label");
+                     var br = document.createElement("br");
+                     result.innerHTML = msg;
+                     document.body.appendChild(result).appendChild(br);
+                });
+        })
+    });
+</script>
+</body>
+</html>
