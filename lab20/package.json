@@ -1,18 +1,19 @@
 {
-  "name": "lab20",
+  "name": "my-npm-project",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "lab20.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "http-server -c-1 ./",
   "author": "Anatolii",
   "license": "ISC",
   "dependencies": {
     "jquery": "^3.6.0",
-    "webpac": "0.0.1-security"
+    "lodash": "^4.17.21"
   },
   "devDependencies": {
-    "http-server": "^0.12.3"
+    "http-server": "^0.12.3",
+    "webpack": "^5.38.1"
   }
 }
