@@ -1,0 +1,21 @@
+extends layout
+
+block content
+  h1= title
+  p Hello #{user}, youre so cool
+
+    h1= "Залізнича станція"
+    form(action="#" method="GET")
+    p Станція призначення:
+      input(type="text" name="target" placeholder="")
+    br
+    p Номер поїзда:
+      input(type="text" name="number_train" placeholder="")
+    br
+    p Номер вагону:
+      input(type="text" name="number_van" placeholder="")
+    br
+    p Місце:
+      input(type="text" name="place" placeholder="")
+    br
+    input(type="submit")
